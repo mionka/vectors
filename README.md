@@ -5,7 +5,24 @@
 
 ### [RECRAFT](https://app.recraft.ai)
 
-**Оригинальные картинки для следующих решений можно посмотреть [здесь](https://github.com/mionka/vectors/tree/main/images/orig_images), а результаты -- [здесь](https://github.com/mionka/vectors/tree/main/images/vector_images)**
+Генерит картинки сразу заполненными, послойно.
+
+Переводит картинку нормально: здесь например, в самом низу "лицо", а поверх него уже рисуются детали лица. Все через Кривые Безье. Также используется градиент!!! 
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/recraft/vectorize/cute-smiling-emoji.png" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/recraft/vectorize/cute-smiling-emoji.svg" width="250" />
+</p>
+
+Здесь потерял одну деталь (серый круг):
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/recraft/vectorize/yin-yang-simple.png" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/recraft/vectorize/yin-yang-simple.svg" width="250" />
+</p>
+
+**Оригинальные картинки для следующих решений можно посмотреть [здесь](https://github.com/mionka/vectors/tree/main/images/orig_images), а результаты — [здесь](https://github.com/mionka/vectors/tree/main/images/vector_images)**
+
 
 ### [VECTORIZER.IO](https://www.vectorizer.io)
 Есть сайт, можно скачать только одну картинку бесплатно, доступ через API не предусмотрен, решение норм, но цвета ИНОГДА слишком блеклые (для ярких исходных картинок).
@@ -75,7 +92,7 @@
 
 <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vtracer.png" width="500" />
 
-Везде использует Безье, в отличие от vectorizer.ai сразу рисует их в закрашенном виде. Из интересного: некоторые фигуры в результате накладываются друг на друга, например (удалили тень на руке):
+Везде использует Безье, в отличие от vectorizer.ai сразу рисует их в закрашенном виде. Фигуры в результате накладываются друг на друга, например (удалили тень на руке):
 
 <p float="left">
   <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vtracer_before.png" width="250" />
