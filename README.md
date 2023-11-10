@@ -96,6 +96,19 @@
 
 <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/4_vector_magic.png" width="500" />
 
+
+Также пример со смайликом:
+
+<img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vector_magic.png" width="500" />
+
+Изображение в целом выглядит неплохо, но при приближении видны проблемы:
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vector_magic_1.png" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vector_magic_2.png" width="250" />
+</p>
+
+
 ### [VTRACER](https://github.com/visioncortex/vtracer)
 
 Позволяет векторизовать цветные картинки. Описание алгоритма [тут](https://www.visioncortex.org/vtracer-docs).
@@ -118,17 +131,15 @@
   <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vtracer_after.png" width="250" />
 </p>
 
-Также пример со смайликом:
-
-<img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vector_magic.png" width="500" />
-
-Изображение в целом выглядит неплохо, но при приближении видны проблемы:
+Также пример со смайликом. По умолчанию рисуется с 6 цветами, результат неплохой, но теряются детали (на мой взгляд, достаточно важные). При увеличении количества цветов становится больше деталей, но изображение становится не очень качественным.
 
 <p float="left">
-  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vector_magic_1.png" width="250" />
-  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vector_magic_2.png" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_6col.svg" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_7col.svg" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_8col.svg" width="250" />
 </p>
 
+Второй результат мог бы быть неплохим, если бы был чуть менее кривым:( Так-то он неплохой
 
 
 ### [VECTORMAKER](https://vectormaker.co)
@@ -147,12 +158,7 @@
 
 <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/4-vectormaker-co.svg" width="500" />
 
-Также пример со смайликом. По умолчанию рисуется с 6 цветами, результат неплохой, но теряются детали (на мой взгляд, достаточно важные). При увеличении количества цветов становится больше деталей, но изображение становится не очень качественным.
+Также пример со смайликом: опять те же проблемы с цветами
 
-<p float="left">
-  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_6col.svg" width="250" />
-  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_7col.svg" width="250" />
-  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_8col.svg" width="250" />
-</p>
+<img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vectormaker.svg" width="500" />
 
-Второй результат мог бы быть неплохим, если бы был чуть менее кривым:( Так-то он неплохой
