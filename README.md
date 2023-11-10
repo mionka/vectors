@@ -40,6 +40,17 @@
 
 <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vectorizer_io_1.png" width="350" />
 
+Также на примере смайлика:
+
+<img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vectorizer_io.png" width="350" />
+
+Результат выглядит неплохо, но при приближении видны проблемы: много лишних фигур.
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vectorizer_io_1.png" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vectorizer_io_2.png" width="250" />
+</p>
+
 Внутрь посмотреть не удалось, не дает скачать.
 
 ### [VECTORIZER.AI](https://vectorizer.ai)
@@ -57,12 +68,18 @@
 <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vectorizer_ai_1.png" width="500" />
 
 
-Если заглядывать внутрь, то выглядит достаточно странно: сначала рисуются контуры (path stroke), а затем рисуются их заливки (path fill), хотя фигуры можно сразу нарисовать закрашенными (можно оставить только path fill!). Причем сам контур эллипса может быть нарисовать через Безье, а закрашен через ellipse. Иногда появляются лишние фигуры, после удаления которых ничего визуально не меняется.
+Если заглядывать внутрь, то выглядит есть интересная деталь: рисуются фигуры (path fill), а затем "дыры" между фигурами закрашиваются с помощью линий (path strokes). Некоторые фигуры распознаются как реальные геометрические фигуры (ellipse, ...), но так происходит не всегда (если отправить несколько картинок с эллипсами, то некоторые из них не распознаются как эллипс).
 
-Например, после удаления всех <path fill ...\> может получиться нечто подобное:
+После удаления всех <path fill ...\> может получиться нечто подобное:
 
 <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vectorizer_ai_nofill.svg" width="500" />
 
+После удаления <path stroke ...\> появляются пробелы (пробелы на первом изображении):
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/vectorizer_ai_holes.png" width="400" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/vectorizer_ai_no_holes.png" width="400" />
+</p>
 
 
 ### [VECTOR MAGIC](https://ru.vectormagic.com)
@@ -94,12 +111,25 @@
 
 <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vtracer.png" width="500" />
 
-Везде использует Безье, в отличие от vectorizer.ai сразу рисует их в закрашенном виде. Фигуры в результате накладываются друг на друга, например (удалили тень на руке):
+Везде использует Безье. Фигуры в результате накладываются друг на друга, например (удалили тень на руке):
 
 <p float="left">
   <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vtracer_before.png" width="250" />
   <img src="https://github.com/mionka/vectors/blob/main/images/res_details/4_vtracer_after.png" width="250" />
 </p>
+
+Также пример со смайликом:
+
+<img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vector_magic.png" width="500" />
+
+Изображение в целом выглядит неплохо, но при приближении видны проблемы:
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vector_magic_1.png" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/res_details/smiley_vector_magic_2.png" width="250" />
+</p>
+
+
 
 ### [VECTORMAKER](https://vectormaker.co)
 
@@ -116,3 +146,13 @@
 Для некоторых изображений предложенных цветов недостаточно:
 
 <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/4-vectormaker-co.svg" width="500" />
+
+Также пример со смайликом. По умолчанию рисуется с 6 цветами, результат неплохой, но теряются детали (на мой взгляд, достаточно важные). При увеличении количества цветов становится больше деталей, но изображение становится не очень качественным.
+
+<p float="left">
+  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_6col.svg" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_7col.svg" width="250" />
+  <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vtracer_8col.svg" width="250" />
+</p>
+
+Второй результат мог бы быть неплохим, если бы был чуть менее кривым:( Так-то он неплохой
