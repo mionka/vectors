@@ -166,7 +166,7 @@
 <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vectormaker.svg" width="500" />
 
 
-#Трекинг по экспериментам:
+# Трекинг по экспериментам:
 
 1.0 - Самая первая версия (2020)
 
