@@ -165,3 +165,14 @@
 
 <img src="https://github.com/mionka/vectors/blob/main/images/vector_images/smiley_vectormaker.svg" width="500" />
 
+
+#Трекинг по экспериментам:
+
+1.0 - Самая первая версия (2020)
+
+1.1 - Версия с использованием potrace
+
+1.1.1 - Исправление проблем с фоном в 1.1
+
+1.1.2 - Исправление проблем с цветами в 1.1.1
+
